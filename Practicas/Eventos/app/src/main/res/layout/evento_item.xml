@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+    android:layout_marginBottom="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonEliminar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/trash" />
+
+        <Button
+            android:id="@+id/buttonModificar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buttonAsistentes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/user"
+            android:layout_margin="5dp"/>
+
+    </TableRow>
+
+</TableLayout>
+

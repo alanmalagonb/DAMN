@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            style="@style/estiloEditText"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtClave"
+            style="@style/estiloEditText"
+            android:layout_marginTop="16dp"
+            android:hint="@string/clave"
+            android:inputType="textPassword"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_marginTop="16dp"
+            style="@style/estiloBoton"
+            android:hint="@string/login"
+            android:onClick="iniciarSesion"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="191dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/prime"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="5dp"
+            app:civ_circle_background_color="#79ffffff" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblEventos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/eventos"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEventos"
+        app:layout_constraintVertical_bias="0.015">
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="154dp"
+            android:text="@string/nombre"
+            android:textColor="#0EB4AC" />
+
+        <TextView
+            android:id="@+id/lblDescripcion"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="123dp"
+            android:text="@string/descripcion"
+            android:textColor="#0EB4AC" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblNombre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="23dp"
+            android:ems="10"
+            android:hint="@string/kamp_fest"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblDescripcion"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="@string/festival_kpop"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescripcion"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="269dp"
+            android:text="@string/fecha"
+            android:textColor="#0EB4AC" />
+
+        <EditText
+            android:id="@+id/txtFecha"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblFecha"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="@string/yyyy_mm_dd"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFecha"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/button_style"
+            android:text="@string/cancelar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFecha"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/btnCancelar"
+            android:background="@drawable/button_style"
+            android:text="@string/agregar"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEventos"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

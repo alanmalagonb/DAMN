@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoDB</string>
+    <string name="frase">Frase</string>
+    <string name="autor">Autor</string>
+    <string name="guardar">Guardar</string>
+    <string name="listado">Listado</string>
+    <string name="frases">Frases</string>
+</resources>

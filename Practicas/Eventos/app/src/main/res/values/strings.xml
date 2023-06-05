@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Eventos</string>
+    <string name="eventos">Eventos</string>
+    <string name="fecha">Fecha</string>
+    <string name="festival_kpop">Festival Kpop</string>
+    <string name="kamp_fest">Kamp Fest</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="nombre">Nombre</string>
+    <string name="yyyy_mm_dd">yyyy-mm-dd</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="agregar">Agregar</string>
+    <string name="asistentes">Asistentes</string>
+    <string name="evento">Evento</string>
+    <string name="regresar">Regresar</string>
+    <string name="modificar">Modificar</string>
+</resources>

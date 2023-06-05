@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Temperaturas</string>
+    <string name="grados">Ingrese los grados</string>
+    <string-array name="types_array">
+        <item>C</item>
+        <item>F</item>
+        <item>K</item>
+    </string-array>
+</resources>

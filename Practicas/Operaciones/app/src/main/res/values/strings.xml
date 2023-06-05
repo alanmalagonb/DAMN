@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Operaciones</string>
+    <string name="numero">Número</string>
+    <string name="numeroHint">Pon un número aquí...</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Aquí aparece el resultado</string>
+</resources>

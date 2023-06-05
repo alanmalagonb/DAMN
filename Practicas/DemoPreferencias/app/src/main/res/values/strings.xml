@@ -1,0 +1,11 @@
+<resources>
+    <!-- Datos de la Actividad Principal -->
+    <string name="app_name">DemoPreferenciass</string>
+    <string name="usuario">Usuario : </string>
+    <string name="clave">Clave :</string>
+    <string name="usuarioHint">Nombre del Usuario</string>
+    <string name="botonAceptar">Iniciar Sesión</string>
+    <string name="recuerdame">Recordar Datos</string>
+    <!-- Datos de la Actividad Secundaria -->
+    <string name="bienvenido">Bienvenido</string>
+</resources>
